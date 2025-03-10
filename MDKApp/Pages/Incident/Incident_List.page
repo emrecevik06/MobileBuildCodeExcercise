@@ -1,26 +1,14 @@
 {
 	"Controls": [
 		{
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable",
 			"Sections": [
 				{
 					"Header": {
-						"_Type": "SectionCommon.Type.Header",
 						"_Name": "SectionHeader0",
-						"AccessoryType": "None",
+						"AccessoryType": "none",
 						"UseTopPadding": false
-					},
-					"Separators": {
-						"TopSectionSeparator": false,
-						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
-						"FooterSeparator": true,
-						"ControlSeparator": true
 					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
@@ -29,7 +17,6 @@
 						"QueryOptions": "/MDKApp/Rules/Incident/GetWorkerID.js"
 					},
 					"_Name": "SectionObjectTable0",
-					"Visible": true,
 					"EmptySection": {
 						"Caption": "No incident found!",
 						"FooterVisible": false
@@ -37,9 +24,7 @@
 					"ObjectCell": {
 						"ContextMenu": {
 							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": []
+							"PerformFirstActionWithFullSwipe": true
 						},
 						"Title": "{Title}",
 						"Subhead": "ID: {ID}",
@@ -48,18 +33,29 @@
 						"StatusImage": "/MDKApp/Rules/Incident/ShowPriorityImage.js",
 						"SubstatusText": "{Status}",
 						"PreserveIconStackSpacing": false,
-						"AccessoryType": "None",
+						"AccessoryType": "disclosureIndicator",
 						"Tags": [],
 						"AvatarStack": {
-							"ImageIsCircular": true,
-							"ImageHasBorder": false
-						},
-						"AvatarGrid": {
+							"Avatars": [
+								{
+									"Image": "/MDKApp/Services/IncidentManagement.service/{@odata.readLink}/DeviceImage"
+								}
+							],
 							"ImageIsCircular": true
 						},
-						"Selected": false
+						"OnPress": "/MDKApp/Actions/Incident/NavToIncident_Detail.action"
 					},
-					"HighlightSelectedItem": false
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Incident Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					}
 				}
 			],
 			"LoadingIndicator": {
@@ -68,13 +64,13 @@
 			}
 		}
 	],
-	"PullDown": {
-		"OnPulledDown": "/MDKApp/Actions/Service/SyncStartedMessage.action"
-	},
 	"_Type": "Page",
 	"_Name": "Incident_List",
 	"Caption": "Incidents",
 	"PrefersLargeCaption": true,
+		"PullDown": {
+		"OnPulledDown": "/MDKApp/Actions/Service/SyncStartedMessage.action"
+	},
 	"ActionBar": {
 		"Items": [
 			{
@@ -87,6 +83,6 @@
 				"OnPress": "/MDKApp/Actions/Application/UserMenuPopover.action"
 			}
 		],
-		"_Name": "ActionBar0"
+		"_Name": "ActionBar1"
 	}
 }
