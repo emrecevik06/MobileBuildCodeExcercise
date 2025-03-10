@@ -2,11 +2,105 @@
 
 Before beginning the session exercises, please ensure that you have installed the **SAP Mobile Services Client** and **SAP Mobile Start** apps from the public store. You can expedite the installation process by using the provided QR codes.
 
-| Apps      | Android | iOS     |
-| :---:        |    :----:   |  :---: |
-| SAP Mobile Services Client      | ![MDK](images/0.1.png)       | ![MDK](images/0.2.png)   |
-| SAP Mobile Start      | ![MDK](images/0.3.png)       | ![MDK](images/0.4.png)   |
+|            Apps            |        Android         |          iOS           |
+| :------------------------: | :--------------------: | :--------------------: |
+| SAP Mobile Services Client | ![MDK](images/0.1.png) | ![MDK](images/0.2.png) |
 
+## Prerequisites
+
+Before proceeding with the session exercises, please ensure that you complete the following prerequisites to ensure a seamless experience.
+
+##### Create a Trial Account
+
+To begin using SAP Mobile Services, you'll first need to create a free trial account on SAP's platform. This will allow you to explore various services and tools offered by SAP.
+
+[Learn how to create a Trial Account](https://developers.sap.com/tutorials/hcp-create-trial-account.html "https://developers.sap.com/tutorials/hcp-create-trial-account.html")
+
+##### Run the Booster
+
+After setting up your trial account, the next step is to run the booster. Boosters help automate the setup of development environments, allowing you to quickly configure services and tools necessary for your project.
+
+[Instructions to Run the Booster](https://developers.sap.com/tutorials/build-code-setup.html "https://developers.sap.com/tutorials/build-code-setup.html")
+
+##### Access Mobile Services
+
+To build and deploy your mobile applications, you'll need access to SAP Mobile Services. This step involves setting up your environment to integrate with SAP's mobile technologies.
+
+[Follow this guide to Access Mobile Services](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html "https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html")
+
+##### Initial Configuration
+
+// Here needs the mobile service be imported
+
+Perform the initial configuration, focusing specifically on step 2 of the provided tutorial. This step ensures that your environment is correctly set up for developing applications with the SAP Mobile Development Kit.
+
+[Complete the Initial Configuration](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html "https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html")
+
+
+### Set Up New MDK App Configuration in the Mobile Services Admin UI
+
+Make sure that you have completed required prerequisites mentioned in this tutorial.
+
+1. Navigate to the [SAP Mobile Services Admin UI](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html).
+
+2. On the home screen, click **Create New App**
+
+    <!-- border -->![MDK](images/x_0.1.1.png)
+
+3. In the **Type of Application** step, select the **Mobile Development Kit (MDK)** and choose **Next**.
+
+    <!-- border -->![MDK](images/x_0.1.2.png)
+
+4. In the **Basic Info** step, provide the required information and choose **Next**.
+
+    | Field | Value |
+    |----|----|
+    | `ID` | IncidentManagement |
+    | `Name` | IncidentManagement |
+
+    <!-- border -->![MDK](images/x_0.1.3.png)
+
+5. In the **Security Settings** step, continue with the default settings and choose **Next**.
+
+    <!-- border -->![MDK](images/x_0.1.4.png)
+
+6. In the **Role Settings** step, continue with the default settings and choose **Next**.
+
+    <!-- border -->![MDK](images/x_0.1.5.png)    
+    
+7. In the **Review** step, you can verify the details of the application definition that you are creating. Make sure all the details are correct. Choose Edit to make any necessary modifications to the section. Choose **Finish** to create the mobile application configuration. This process may take 2-3 minutes.
+
+    <!-- border -->![MDK](images/x_0.1.7.png)
+
+    >If you see a _Application is without Role Settings_ warning message, choose **OK**. You may assign roles after the app has been configured, if needed.
+
+    Once you have created your application, you see a list of default features have been automatically assigned to the app.
+
+    <!-- border -->![MDK](x_0.1.8.png)
+
+### Configure Destination
+
+In the next steps we will configure our backend destination.
+1. Go to `Connectivity`
+   <!-- border -->![MDK](x_0.2.1.png)
+2. Press on the **+** button
+   <!-- border -->![MDK](x_0.2.2.png)
+3.    In the **Basic Info** step, provide the required information and choose **Next**.
+      | Field | Value |
+    |----|----|
+    | `Destination Name` | IncidentManagement |
+    | `Destination Type` | Internet Destination |
+    | `URL`| https://pm-mobile-teched-2023-demos-mobilet23-dev-mobileinciden4492b2c1.cfapps.ap11.hana.ondemand.com/service/IncidentManagementMobile/ |
+    <!-- border -->![MDK](x_0.2.3.png)
+4. In the **Custom Headers** step, continue with the default settings and choose **Next**.
+   <!-- border -->![MDK](x_0.2.4.png)
+5. In the **Annotations** step, continue with the default settings and choose **Next**.
+   <!-- border -->![MDK](x_0.2.5.png)
+6. In the **Destination Configuration** step, continue with the default settings and choose **Next**.
+   <!-- border -->![MDK](x_0.2.6.png)
+7. In the **Certificate Configuration** step, continue with the default settings and choose **Finish**.
+   <!-- border -->![MDK](x_0.2.7.png)
+ 
 ## Summary
 
 You have now fulfilled the prerequisite needed to start the session exercises. 
