@@ -515,6 +515,6 @@ You've now successfully modified an incident entity.
 
 ## Navigation
 
-| Previous| Next |
-|---|---|
-| [Exercise 2](../ex2/README.md) | [Exercise 4](../ex4/README.md) |
+| Previous                       |
+| ------------------------------ |
+| [Exercise 2](../ex2/README.md) |
