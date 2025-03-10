@@ -29,12 +29,13 @@ In this exercise, you will run a starting SAP Mobile Development Kit (MDK) appli
     | `Clone from Git` | `https://github.com/emrecevik06/MobileBuildCodeExcercise.git` |
     | `Project Name` | myapp (used for this tutorial) |
     | `Description` | optional |
+
     ![MDK](images/x_1.1.4.png)
-> If this message appears, you can just press on **OK**
-> ![MDK](images/x_1.1.5.png)
->
->When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
-> ![MDK](images/x_1.1.6.png) 
+	> If this message appears, you can just press on **OK**
+	> ![MDK](images/x_1.1.5.png)
+	>
+	>When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
+	> ![MDK](images/x_1.1.6.png) 
 
 ### Exercise 1.2 - Change the workspace to the Project Explorer
 
