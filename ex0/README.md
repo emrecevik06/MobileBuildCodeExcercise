@@ -28,16 +28,7 @@ To build and deploy your mobile applications, you'll need access to SAP Mobile S
 
 [Follow this guide to Access Mobile Services](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html "https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html")
 
-##### Initial Configuration
-
-// Here needs the mobile service be imported
-
-Perform the initial configuration, focusing specifically on step 2 of the provided tutorial. This step ensures that your environment is correctly set up for developing applications with the SAP Mobile Development Kit.
-
-[Complete the Initial Configuration](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html "https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html")
-
-
-### Set Up New MDK App Configuration in the Mobile Services Admin UI
+##### Set Up New MDK App Configuration in the Mobile Services Admin UI
 
 Make sure that you have completed required prerequisites mentioned in this tutorial.
 
