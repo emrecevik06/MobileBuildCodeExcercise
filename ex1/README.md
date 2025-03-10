@@ -14,33 +14,43 @@ In this exercise, you will run a starting SAP Mobile Development Kit (MDK) appli
 
     > Cancel the selection of the user certificate if a prompt appears in the browser.
 
-2. Please provide the login credentials that were shared with you during the session. 
+2. Go to **Instances and Subscriptions > Subscriptions > SAP Build Code**.
 
-    ![MDK](images/1.1.1.png)  
+    ![MDK](images/x_1.1.1.png)  
 
-3. If your dev space is in `STOPPED` state, you can start it by clicking on the run icon.
-
-    ![MDK](images/1.1.2.png)  
-
-    When it is in the `RUNNING` state, you can open it by clicking on the name.    
-
-    ![MDK](images/1.1.3.png) 
+3. Go to **Create > Clone from Git**.
+    ![MDK](images/x_1.1.2.png)
+    
+4. Click the **Mobile Application** option.
+	![MDK](images/x_1.1.3.png)
+5. Fill out these information and click **create**: 
+   | Field | Value |
+    |----|----|
+    | `Clone from Git` | `https://github.com/emrecevik06/MobileBuildCodeExcercise.git` |
+    | `Project Name` | myapp (used for this tutorial) |
+    | `Description` | optional |
+    ![MDK](images/x_1.1.4.png)
+> If this message appears, you can just press on **OK**
+> ![MDK](images/x_1.1.5.png)
+>
+>When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
+> ![MDK](images/x_1.1.6.png) 
 
 ### Exercise 1.2 - Change the workspace to the Project Explorer
 
 You will now switch your workspace to the `projects` folder.
 
-1. Click on the Explorer icon and click **Open Folder**.
+1. Go to **View menu>Find Command** OR press **Command+Shift+p** on Mac OR press **Ctrl+Shift+P** on Windows machine to open a folder. Enter in the search bar **Open Folder** and select `File: Open Folder...`.
 
-    ![MDK](images/1.2.1.png) 
+    ![MDK](images/x_1.2.1.png) 
 
-2. Select the `projects` folder if not already selected and click **OK**.
+2. Select the `projects > MobileBuildCodeExcercise > MDKApp` folders and click **OK**.
 
-    ![MDK](images/1.2.2.png) 
+    ![MDK](images/x_1.2.2.png) 
 
     The SAP Business Application Studio page will reload, and the projects folder will now open as the workspace. 
 
-    ![MDK](images/1.2.3.png)      
+    ![MDK](images/x_1.2.3.png)      
 
 ### Exercise 1.3 - Display the QR code for onboarding the Mobile app
 
@@ -64,7 +74,7 @@ You will now run the initial application on the Mobile client installed on your 
 
     ![MDK](images/1.3.4.png)
 
-5. A new tab will open in your browser. Enter  `tdct3ched1-platform` as the origin key for the custom IdP, then click on **Sign in with alternative identity provider**.
+5. A new tab will open in your browser. Click on **Sign in with default identity provider**.
 
     ![MDK](images/1.3.5.png)
 
