@@ -67,7 +67,7 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
     Once you have created your application, you see a list of default features have been automatically assigned to the app.
 
-    ![MDK](images/x_0.1.8.png)
+    ![MDK](images/x_0.1.9.png)
 
 ### Configure Destination
 
