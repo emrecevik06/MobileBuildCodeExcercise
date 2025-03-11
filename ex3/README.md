@@ -64,6 +64,7 @@ Both online and offline applications can be modified by users. Online applicatio
     | `Name`| `FCStatus` |
     | `Caption` | `Status` |
     | `AllowEmptySelection` | Choose `false` from the dropdown |
+    | `AllowMultipleSelection` | Choose `false` from the dropdown |
     | `IsPickerDismissedOnSelectionption`  | Choose `true` from the dropdown |
     | `AllowDefaultValueIfOneItem` | Choose `true` from the dropdown |
 
