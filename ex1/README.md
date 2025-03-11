@@ -59,19 +59,19 @@ So far, you have learned how to quickly get started with developing an MDK proje
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
-    <!-- border -->![MDK](img-4.1.png)
+    ![MDK](images/img-4.1.png)
 
 2. Select deploy target as **Mobile Services**.
 
-    <!-- border -->![MDK](img-4.2.png)
+    ![MDK](images/img-4.2.png)
 
     If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
-    <!-- border -->![MDK](img-4.3.png)
+    ![MDK](images/img-4.3.png)
 
     You should see **Deploy to Mobile Services successfully!** message.
 
-    <!-- border -->![MDK](img-4.4.png)
+    ![MDK](images/img-4.4.png)
 
 ### Exercise 1.3 - Display the QR code for onboarding the Mobile app
 
