@@ -65,8 +65,10 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
 In the next steps we will configure our backend destination.
 1. Go to `Connectivity`
+
    ![MDK](images/x_0.2.1.png)
 2. Press on the **+** button
+
    ![MDK](images/x_0.2.2.png)
 3. In the **Basic Info** step, provide the required information and choose **Next**.
 
@@ -78,12 +80,16 @@ In the next steps we will configure our backend destination.
 
     ![MDK](images/x_0.2.3.png)
 4. In the **Custom Headers** step, continue with the default settings and choose **Next**.
+
    ![MDK](images/x_0.2.4.png)
 5. In the **Annotations** step, continue with the default settings and choose **Next**.
+
    ![MDK](images/x_0.2.5.png)
 6. In the **Destination Configuration** step, continue with the default settings and choose **Next**.
+
    ![MDK](images/x_0.2.6.png)
 7. In the **Certificate Configuration** step, continue with the default settings and choose **Finish**.
+
    ![MDK](images/x_0.2.7.png)
 
 
