@@ -10,25 +10,25 @@ Before beginning the session exercises, please ensure that you have installed th
 
 Before proceeding with the session exercises, please ensure that you complete the following prerequisites to ensure a seamless experience.
 
-##### Create a Trial Account
+### Create a Trial Account
 
 To begin using SAP Mobile Services, you'll first need to create a free trial account on SAP's platform. This will allow you to explore various services and tools offered by SAP.
 
 [Learn how to create a Trial Account](https://developers.sap.com/tutorials/hcp-create-trial-account.html "https://developers.sap.com/tutorials/hcp-create-trial-account.html")
 
-##### Run the Booster
+### Run the Booster
 
 After setting up your trial account, the next step is to run the booster. Boosters help automate the setup of development environments, allowing you to quickly configure services and tools necessary for your project.
 
 [Instructions to Run the Booster](https://developers.sap.com/tutorials/build-code-setup.html "https://developers.sap.com/tutorials/build-code-setup.html")
 
-##### Access Mobile Services
+### Access Mobile Services
 
 To build and deploy your mobile applications, you'll need access to SAP Mobile Services. This step involves setting up your environment to integrate with SAP's mobile technologies.
 
 [Follow this guide to Access Mobile Services](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html "https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html")
 
-##### Set Up New MDK App Configuration in the Mobile Services Admin UI
+### Set Up New MDK App Configuration in the Mobile Services Admin UI
 
 Make sure that you have completed required prerequisites mentioned in this tutorial.
 
