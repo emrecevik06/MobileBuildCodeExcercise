@@ -468,9 +468,9 @@ To navigate from the Incident Detail page to a new page for modifying incident i
 
 ### Exercise 3.5 - Redeploy the application
 
-1. Right-click the `Application.app` file in the project explorer pane, choose `MDK:Deploy` and then select deploy target as **Mobile Services**.
+1. Click on `Application.app` file in the project explorer pane and click on `Deploy` and then select deploy target as **Mobile Services**.
 
-    ![MDK](images/3.5.1.png)
+    ![MDK](images/x_3.5.1.png)
     ![MDK](images/3.5.2.png)
 
     >Alternatively, you can select `MDK: Redeploy` from the command palette. To access the command palette, go to the View menu and choose Command Palette, or press Command+Shift+P on a Mac or Ctrl+Shift+P on a Windows machine. This command will perform the last deployment.

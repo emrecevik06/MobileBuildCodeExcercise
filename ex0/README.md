@@ -1,12 +1,4 @@
-# Getting Started
-
-Before beginning the session exercises, please ensure that you have installed the **SAP Mobile Services Client** and **SAP Mobile Start** apps from the public store. You can expedite the installation process by using the provided QR codes.
-
-|            Apps            |        Android         |          iOS           |
-| :------------------------: | :--------------------: | :--------------------: |
-| SAP Mobile Services Client | ![MDK](images/0.1.png) | ![MDK](images/0.2.png) |
-
-## Prerequisites
+# Prerequisites
 
 Before proceeding with the session exercises, please ensure that you complete the following prerequisites to ensure a seamless experience.
 
@@ -46,7 +38,7 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
     | Field | Value |
     |----|----|
-    | `ID` | IncidentManagement |
+    | `ID` | IncidentManagement.myapp.demo |
     | `Name` | IncidentManagement |
 
     ![MDK](images/x_0.1.3.png)
@@ -93,10 +85,14 @@ In the next steps we will configure our backend destination.
    ![MDK](images/x_0.2.6.png)
 7. In the **Certificate Configuration** step, continue with the default settings and choose **Finish**.
    ![MDK](images/x_0.2.7.png)
- 
-## Summary
 
-You have now fulfilled the prerequisite needed to start the session exercises. 
+
+### Download SAP Mobile Services Client
+Before beginning the session exercises, please ensure that you have installed the **SAP Mobile Services Client** app from the public store. You can expedite the installation process by using the provided QR codes.
+
+|            Apps            |        Android         |          iOS           |
+| :------------------------: | :--------------------: | :--------------------: |
+| SAP Mobile Services Client | ![MDK](images/0.1.png) | ![MDK](images/0.2.png) |
 
 ## Navigation
 

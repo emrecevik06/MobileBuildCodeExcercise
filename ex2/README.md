@@ -134,13 +134,13 @@ A Profile header UI control furnishes additional information and enhances access
 
 ### Exercise 2.4 - Redeploy the application
 
-1. Right-click the `Application.app` file in the project explorer pane and select `MDK:Deploy`.
+1. Click on `Application.app` file in the project explorer pane and click on `Deploy`.
 
-    ![MDK](images/2.4.1.png)
+    ![MDK](images/x_2.4.1.png)
 
     >If you are prompted to login to Cloud Foundry, please follow the steps outlined [here](../ex1/README.md#exercise-13---display-the-qr-code-for-onboarding-the-mobile-app)
 
-8. Next, select the deploy target as **Mobile Services**.
+2. Next, select the deploy target as **Mobile Services**.
 
     ![MDK](images/2.4.2.png)
 

@@ -10,20 +10,19 @@ In this exercise, you will run a starting SAP Mobile Development Kit (MDK) appli
 
 ### Exercise 1.1 - Launch the SAP Business Application Studio for MDK Development
 
-1. Launch the [SAP Business Application Studio](https://ad162-egls99xc.eu10cf.applicationstudio.cloud.sap/index.html) in the Google Chrome browser.
-
-    > Cancel the selection of the user certificate if a prompt appears in the browser.
-
-2. Go to **Instances and Subscriptions > Subscriptions > SAP Build Code**.
+1. Go to **Instances and Subscriptions > Subscriptions > SAP Build Code**.
 
     ![MDK](images/x_1.1.1.png)  
 
-3. Go to **Create > Clone from Git**.
+2. Go to **Create > Clone from Git**.
+   
     ![MDK](images/x_1.1.2.png)
     
-4. Click the **Mobile Application** option.
+3. Click the **Mobile Application** option.
+   
 	![MDK](images/x_1.1.3.png)
-5. Fill out these information and click **create**: 
+
+4. Fill out these information and click **create**: 
    | Field | Value |
     |----|----|
     | `Clone from Git` | `https://github.com/emrecevik06/MobileBuildCodeExcercise.git` |
@@ -31,12 +30,12 @@ In this exercise, you will run a starting SAP Mobile Development Kit (MDK) appli
     | `Description` | optional |
 
     ![MDK](images/x_1.1.4.png)
+    
 	> If this message appears, you can just press on **OK**
 	> ![MDK](images/x_1.1.5.png)
 	>
 	>When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
 	> ![MDK](images/x_1.1.6.png) 
-
 ### Exercise 1.2 - Change the workspace to the Project Explorer
 
 You will now switch your workspace to the `projects` folder.
@@ -52,7 +51,6 @@ You will now switch your workspace to the `projects` folder.
     The SAP Business Application Studio page will reload, and the projects folder will now open as the workspace. 
 
     ![MDK](images/x_1.2.3.png)      
-
 ### Deploy the Project
 
 So far, you have learned how to quickly get started with developing an MDK project in the SAP Business Application Studio editor. Now, you will deploy the project to Mobile Services to use it in the Mobile client.
@@ -81,41 +79,37 @@ You will now run the initial application on the Mobile client installed on your 
 
 1. Click the `Application.app` to open it in MDK Application Editor and then click the **Application QR Code** icon.
 
-    ![MDK](images/1.3.1.png)
+    ![MDK](images/x_1.3.1.png)
 
-2. If prompted with an `Alert` window, dismiss it by clicking on **OK**. 
-
-    ![MDK](images/1.3.2.png)
-
-3. If you don't have an active CF session, you may be prompted to log into Cloud Foundry. If prompted, click **Login** to continue. If not, proceed directly to step 10-.
+2. If you don't have an active CF session, you may be prompted to log into Cloud Foundry. If prompted, click **Login** to continue. If not, proceed directly to step 10-.
 
     ![MDK](images/1.3.3.png)
 
-4. Choose the **SSO Passcode** as your authentication method, then click on the highlighted hyperlink. This will open a new browser page.
+3. Choose the **SSO Passcode** as your authentication method, then click on the highlighted hyperlink. This will open a new browser page.
 
     ![MDK](images/1.3.4.png)
 
-5. A new tab will open in your browser. Click on **Sign in with default identity provider**.
+4. A new tab will open in your browser. Click on **Sign in with default identity provider**.
 
     ![MDK](images/1.3.5.png)
 
     >Cancel the certificate selection if you are prompted to do so in the browser.
 
-6. Copy the Temporary Authentication Code.
+5. Copy the Temporary Authentication Code.
 
     ![MDK](images/1.3.6.png)
 
-7. Switch back to the SAP Business Application Studio page. Paste the copied code into the field labeled **Enter your SSO Passcode** and then click **Sign In**.
+6. Switch back to the SAP Business Application Studio page. Paste the copied code into the field labeled **Enter your SSO Passcode** and then click **Sign In**.
 
     ![MDK](images/1.3.7.png)
 
-8. You are now signed in to the Cloud Foundry. Set the Cloud Foundry target by choosing the appropriate Organization and space from the dropdown menu and then click on **Apply**.
+7. You are now signed in to the Cloud Foundry. Set the Cloud Foundry target by choosing the appropriate Organization and space from the dropdown menu and then click on **Apply**.
 
     ![MDK](images/1.3.8.png)
 
-9. Once the Cloud Foundry target is set, the `Cloud Foundry Sign in` tab will automatically close. Click on the QR code icon again.
+8. Once the Cloud Foundry target is set, the `Cloud Foundry Sign in` tab will automatically close. Click on the QR code icon again.
     
-10. The On-boarding QR code is now displayed. Leave the Onboarding dialog box open as you proceed to the next step.
+9. The On-boarding QR code is now displayed. Leave the Onboarding dialog box open as you proceed to the next step.
 
     ![MDK](images/1.3.9.png)
 
