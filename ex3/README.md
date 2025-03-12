@@ -43,9 +43,9 @@ Both online and offline applications can be modified by users. Online applicatio
 
     ![MDK](images/3.1.4.gif)
 
-5. In the **Properties** pane, set the **Caption** to **Update Incident Detail**.
+5. Press on the empty area and set the **Caption** in the **Properties** pane to **Update Incident Detail**.
 
-    ![MDK](images/3.1.5.png)
+    ![MDK](images/x_3.1.5.png)
 
 6. Next, you'll add fields editable by a technician, including status, ID of the defective device name, device image, and customer signature. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell** onto the Page area.
 

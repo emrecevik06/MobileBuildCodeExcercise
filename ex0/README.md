@@ -47,10 +47,12 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
     ![MDK](images/x_0.1.4.png)
 
-6. In the **Role Settings** step, continue with the default settings and choose **Next**.
+5. In the **Role Settings** step, continue with the default settings and choose **Next**.
 
     ![MDK](images/x_0.1.5.png)    
-    
+6. In the **Assign Features** step, continue with the default settings and choose **Next**.
+
+    ![MDK](images/x_0.1.6.png)    
 7. In the **Review** step, you can verify the details of the application definition that you are creating. Make sure all the details are correct. Choose Edit to make any necessary modifications to the section. Choose **Finish** to create the mobile application configuration. This process may take 2-3 minutes.
 
     ![MDK](images/x_0.1.7.png)
