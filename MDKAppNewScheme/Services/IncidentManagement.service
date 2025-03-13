@@ -1,5 +1,9 @@
 {
-    "SourceType": "Mobile",
     "DestinationName": "IncidentManagement",
-    "PathSuffix": ""
+    "OfflineEnabled": true,
+    "LanguageURLParam": "",
+    "OnlineOptions": {},
+    "PathSuffix": "",
+    "SourceType": "Mobile",
+    "ServiceUrl":""
 }
