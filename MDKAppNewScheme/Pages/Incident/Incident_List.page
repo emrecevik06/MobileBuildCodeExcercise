@@ -52,8 +52,9 @@
 						"AccessoryType": "None",
 						"Tags": [],
 						"AvatarStack": {
-							"ImageIsCircular": true,
-							"ImageHasBorder": false
+						"Avatars": [{
+								"Image": "/MDKApp/Services/IncidentManagement.service/{@odata.readLink}/DeviceImage"
+							}]
 						},
 						"AvatarGrid": {
 							"ImageIsCircular": true
