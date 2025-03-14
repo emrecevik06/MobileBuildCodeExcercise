@@ -49,18 +49,27 @@
 						"StatusImage": "/MDKApp/Rules/Incident/ShowPriorityImage.js",
 						"SubstatusText": "{Status}",
 						"PreserveIconStackSpacing": false,
-						"AccessoryType": "None",
+						"AccessoryType": "DisclosureIndicator",
 						"Tags": [],
 						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "/MDKApp/Services/IncidentManagement.service/{@odata.readLink}/DeviceImage"
+								}
+							],
 							"ImageIsCircular": true,
 							"ImageHasBorder": false
 						},
 						"AvatarGrid": {
+							"Avatars": [],
 							"ImageIsCircular": true
 						},
 						"OnPress": "/MDKApp/Actions/Incident/NavToIncident_Detail.action",
 						"_Type": "ObjectTable.Type.ObjectCell",
 						"Selected": false
+					},
+					"Search": {
+						"Enabled": true
 					},
 					"HighlightSelectedItem": false
 				}
@@ -92,6 +101,6 @@
 		"_Name": "ActionBar0",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Incidents",
-		"PrefersLargeCaption": true
+		"PrefersLargeCaption": true	
 	}
 }

@@ -1,19 +1,19 @@
-# Exercise 2 - Enhance the generated Incidents List and Detail page
+# Exercise 2 - Enhance the Gnerated Incidents List and Detail page
 
-In this exercise, you'll make few enhancements to the generated Incidents list. First, you'll display the customer's name. Then, you'll add a Filter feedback bar that will appear above the Incident List to filter incidents based on certain criteria.
+In this exercise, you'll make a few enhancements to the generated Incidents list. First, you'll display the customer's name. Then, you'll add a Filter feedback bar that will appear above the Incident List to filter incidents based on certain criteria.
 
-Next, you'll make enhancements to the Incident detail page. Here, you'll replace the existing Object Header with a Profile Header. This enhancement will provide additional information and improved access to multiple communication methods with a customer.
+Next, you'll enhance the Incident detail page. Here, you'll replace the existing Object Header with a Profile Header. This enhancement will provide additional information and improved access to multiple communication methods with a customer.
 
-- [Exercise 2.1 - Display Customer Name and add a Filter Feedback Bar on the Incident List page](#exercise-21---display-customer-name-and-add-a-filter-feedback-bar-on-the-incident-list-page)
+- [Exercise 2.1 - Display Customer Name and Add a Filter Feedback Bar on the Incident List page](#exercise-21---display-customer-name-and-add-a-filter-feedback-bar-on-the-incident-list-page)
 - [Exercise 2.2 -  Add a Filter Feedback Bar on the Incident List page](#exercise-22---add-a-filter-feedback-bar-on-the-incident-list-page)
-- [Exercise 2.3 - Replace the existing Object Header with Profile Header UI control](#exercise-23---replace-the-existing-object-header-with-profile-header-ui-control)
-- [Exercise 2.4 - Redeploy the application](#exercise-24---redeploy-the-application)
-- [Exercise 2.5 - Update the MDK app with new metadata](#exercise-25---update-the-mdk-app-with-new-metadata)
+- [Exercise 2.3 - Replace the Existing Object Header with the Profile Header UI control](#exercise-23---replace-the-existing-object-header-with-the-profile-header-ui-control)
+- [Exercise 2.4 - Redeploy the Application](#exercise-24---redeploy-the-application)
+- [Exercise 2.5 - Update the MDK App with New Metadata](#exercise-25---update-the-mdk-app-with-new-metadata)
 - [Summary](#summary)
 
-### Exercise 2.1 - Display Customer Name and add a Filter Feedback Bar on the Incident List page
+### Exercise 2.1 - Display Customer Name and Add a Filter Feedback Bar on the Incident List page
 
-As a technician, you may want to see who reported an incident without navigating to the detail page. You may also want to filter the incident list based on status (like new or in process) and urgency (like high).
+As a technician, you may want to see who reported an incident without navigating to the detail page. You may also want to filter the incident list based on status (like new or in process) and urgency (e.g., high).
 
 1. The Incident entity has a `customer` navigation property defined in the OData service definition that allows accessing customer information. 
 
@@ -27,7 +27,7 @@ As a technician, you may want to see who reported an incident without navigating
 
 3. Scroll down through the Object Table properties, then click on the link icon next to the **Footnote** property to open the Object browser.
     * Manually type `Reported by` in the Expression field, followed by a space.
-    * In the search field, look for the customer's first name, select `FirstName` and click on `Insert`. The expression box will generate the binding `Reported by {customer/FirstName}` **Don't close the Object Browser window**.
+    * In the search field, look for the customer's first name, select `FirstName` and click `Insert`. The expression box will generate the binding `Reported by {customer/FirstName}` **Don't close the Object Browser window**.
     * Add a space after the generated value.
     * Look for the customer's last name in the search field, select `LastName` and click  `Insert`. The expression box will generate the binding `Reported by {customer/FirstName} {customer/LastName}`. 
     * Click **OK** to set this value in the control field.
@@ -74,7 +74,7 @@ A Filter feedback bar is a horizontal bar that appears above a content list (on 
 
     ![MDK](images/2.2.6.png) 
 
-### Exercise 2.3 - Replace the existing Object Header with Profile Header UI control
+### Exercise 2.3 - Replace the Existing Object Header with the Profile Header UI control
 
 A Profile header UI control furnishes additional information and enhances access to various communication methods with a customer.
 
@@ -132,13 +132,11 @@ A Profile header UI control furnishes additional information and enhances access
 
     ![MDK](images/2.3.11.png) 
 
-### Exercise 2.4 - Redeploy the application
+### Exercise 2.4 - Redeploy the Application
 
-1. Click on `Application.app` file in the project explorer pane and click on `Deploy`.
+1. Scroll on the `Incident_Detail.page` and click on `Deploy`.
 
     ![MDK](images/x_2.4.1.png)
-
-    >If you are prompted to login to Cloud Foundry, please follow the steps outlined [here](../ex1/README.md#exercise-13---display-the-qr-code-for-onboarding-the-mobile-app)
 
 2. Next, select the deploy target as **Mobile Services**.
 
@@ -150,15 +148,13 @@ A Profile header UI control furnishes additional information and enhances access
 
     >Version 1 was pre-deployed to your mobile services app.
 
-### Exercise 2.5 - Update the MDK app with new metadata
+### Exercise 2.5 - Update the MDK App with new metadata
 
-| Steps      | Android | iOS     |
-| :---:        |    :----:   |  :---: |
+| Steps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Android&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | iOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |
+| --- | --- | --- |
 | 1. Tap the **Check for Updates** option in the `User menu` on the Incident page.      | ![MDK](images/2.5.1.png)       | ![MDK](images/2.5.2.png)   |
 | 2. You will see a `New Version Available!` pop-up.  Tap **Now**.     | ![MDK](images/2.5.3.png)       | ![MDK](images/2.5.4.png)   |
 | 3. On the Incident list page, you now see the customer's name and a filter bar for applying quick filters. <br/> On the Detail page, a profile header will display the customer's details and communication items. This will allow you to email, make a phone call, or send a message to the customer.   | ![MDK](images/2.5.5.gif)       | ![MDK](images/2.5.6.gif)   |
-
-
 
 ## Summary
 

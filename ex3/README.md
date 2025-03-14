@@ -70,9 +70,9 @@ Both online and offline applications can be modified by users. Online applicatio
 
     ![MDK](images/3.1.8.png)
 
-    >`AllowEmptySelection:` This disables or enables the selection of empty value set.
-    >`IsPickerDismissedOnSelectionption:` This enables automatic dismissal of the list view after an entry is selected.
-    >`AllowDefaultValueIfOneItem:` This enables automatic selection of the default value for the List Picker if only one item is available. It's applicable when a technician updates the status of an incident from `In Process` to `Closed`.
+    > `AllowEmptySelection:` This disables or enables the selection of empty value set.<br>
+    > `IsPickerDismissedOnSelectionption:` This enables automatic dismissal of the list view after an entry is selected.<br>
+    > `AllowDefaultValueIfOneItem:` This enables automatic selection of the default value for the List Picker if only one item is available. It's applicable when a technician updates the status of an incident from `In Process` to `Closed`.
 
 9. When a technician is updating the status of an incident, they should be presented with specific options depending on the current status of the incident.
     - If the current status is `New`, the technician should see the options `In Process` and `Closed`.
@@ -115,15 +115,11 @@ Both online and offline applications can be modified by users. Online applicatio
     }
     ```
 
-13. Remove the default picker item value. 
-
-    ![MDK](images/3.1.12.gif)
-
-14. Drag and drop a **Simple Property** Form cell control onto the `Ìncident_Edit.page` area. This allows a technician to manually input or scan the ID of the defective device.
+13. Drag and drop a **Simple Property** Form cell control onto the `Ìncident_Edit.page` area. This allows a technician to manually input or scan the ID of the defective device.
 
     ![MDK](images/3.1.13.gif)
 
-15. Provide the following information:
+14. Provide the following information:
 
     | Property | Value |
     |----|----|
@@ -134,11 +130,11 @@ Both online and offline applications can be modified by users. Online applicatio
 
     ![MDK](images/3.1.14.png)
 
-16. Drag and drop an **Attachment** Form Cell control onto the `Ìncident_Edit.page` area. This allows a technician to upload an image of the device they have repaired.  
+15. Drag and drop an **Attachment** Form Cell control onto the `Ìncident_Edit.page` area. This allows a technician to upload an image of the device they have repaired.  
    
     ![MDK](images/3.1.15.gif)
 
-17. Provide the following information:          
+16. Provide the following information:          
 
     | Property | Value |
     |----|----|
@@ -149,11 +145,11 @@ Both online and offline applications can be modified by users. Online applicatio
 
     ![MDK](images/3.1.16.png)
 
-18. Now, drag and drop an **Inline Signature Capture** Form Cell control onto the `Ìncident_Edit.page` area. This enables a technician to collect a digital signature from the customer to confirm that the issue has been resolved.
+17. Now, drag and drop an **Inline Signature Capture** Form Cell control onto the `Ìncident_Edit.page` area. This enables a technician to collect a digital signature from the customer to confirm that the issue has been resolved.
    
     ![MDK](images/3.1.17.gif)
 
-19. Provide the following information:          
+18. Provide the following information:          
 
     | Property | Value |
     |----|----|
@@ -170,21 +166,21 @@ Both online and offline applications can be modified by users. Online applicatio
     >`WatermarkText:` The watermark text will be displayed in the captured signature image.
     >![MDK](images/3.1.19.gif)
 
-20. If the `In Process` option is chosen from the Status list picker during an Incident modification, the options for uploading a Device Image and capturing customer signature should be hidden. However, if the `Closed` status is selected, the technician should be provided with options to upload an image of the device and collect the customer's signature. This logic needs to be programmatically handled within the application.
+19. If the `In Process` option is chosen from the Status list picker during an Incident modification, the options for uploading a Device Image and capturing customer signature should be hidden. However, if the `Closed` status is selected, the technician should be provided with options to upload an image of the device and collect the customer's signature. This logic needs to be programmatically handled within the application.
 
     Select `Status` List picker control, navigate to the **Event** tab, Click on **Create a rule/action** for `OnValueChange` event.
 
     ![MDK](images/3.1.20.png)
 
-21. Next, select **Object Type** as **Rule** and **Folders** as `/MDKApp/Rules/Incident`. Click **OK**.  
+20. Next, select **Object Type** as **Rule** and **Folders** as `/MDKApp/Rules/Incident`. Click **OK**.  
 
     ![MDK](images/3.1.10.png)
 
-22. Provide the name `StatusChangeProtocol` to your rule, Click **Finish**.
+21. Provide the name `StatusChangeProtocol` to your rule, Click **Finish**.
 
     ![MDK](images/3.1.21.png)
 
-23. Replace the generated snippet with the following code.
+22. Replace the generated snippet with the following code.
 
     ```JavaScript
     /**
@@ -233,16 +229,16 @@ While updating the incident details, you may want to close the current page and 
 
 While a Technician is updating incident information, such as Status, Device ID, Device Image, and Customer Signature, these details will be communicated to the backend through relevant OData calls based on entity type and their respective OData property types.
 
-    You can find details of the service definition in your MDK metadata project `/Services/.IncidentManagement.xml`.
+You can find details of the service definition in your MDK metadata project `/Services/.IncidentManagement.xml`.
     
-    ![MDK](images/3.3.1.png)
+![MDK](images/3.3.1.png)
 
-    To update the `Status` and `DeviceID` properties of Incident entity, the OData Update Entity action is used. <br/> However, when dealing with the `DeviceImage` and `ResolutionSignatureImage` properties of the Incident entity, which are of type Edm.Stream, the OData UploadStream action is used. These properties likely store binary data, such as images or files. 
+ To update the `Status` and `DeviceID` properties of Incident entity, the OData Update Entity action is used. <br/> However, when dealing with the `DeviceImage` and `ResolutionSignatureImage` properties of the Incident entity, which are of type Edm.Stream, the OData UploadStream action is used. These properties likely store binary data, such as images or files. 
 
-    - You will now add an Action Bar item on the `Incident_Edit.page`. This item will trigger an OData Update Entity action to save the Status and Device ID.
-    - Upon successful completion of the OData Update Entity action, an OData Upload Stream action should be initiated to save the Device Image and Customer Signature.
-    - Consider closing the page once the update action is executed successfully.
-    - A failure message should be displayed if either action fails to store the changes.
+- You will now add an Action Bar item on the `Incident_Edit.page`. This item will trigger an OData Update Entity action to save the Status and Device ID.
+- Upon successful completion of the OData Update Entity action, an OData Upload Stream action should be initiated to save the Device Image and Customer Signature.
+- Consider closing the page once the update action is executed successfully.
+- A failure message should be displayed if either action fails to store the changes.
 
 1. In the `Incident_Edit.page`, **drag and drop** an **Action Bar Item** to the upper right corner of the action bar.
 
@@ -316,7 +312,7 @@ While a Technician is updating incident information, such as Status, Device ID, 
     | `Title` | `Update Incident` |
     | `OKCaption` | `OK` |
 
-![MDK](images/3.3.12.png) 
+    ![MDK](images/3.3.12.png) 
 
     >`Incident_UpdateEntity` is the Action Result value of the Incident_UpdateEntity.action. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the OData failure message. <br/> This is the standard Binding Target Path (also called Dynamic Target Path) syntax used when you need to include a binding with other bindings or within a string as used in the message here.<br/> You could exclude above expression and can just display a generic message.
 
@@ -351,7 +347,7 @@ While a Technician is updating incident information, such as Status, Device ID, 
 21. Select the `DeviceImage` property and click the **link icon** to open the object browser. 
 
     -  Change the drop-down in the object browser to `Controls & ClientData`, select the **Current Page** radio button.
-    - In the search box, start typing `status`. The list will filter to display the matching values. Double-click the **SelectedValue (Value)** entry under the `FCStatus` field and click **OK** to set binding.
+    - In the search box, start typing `image`. The list will filter to display the matching values. Double-click the **Value (Value)** entry under the `FCDeviceImage` field and click **OK** to set binding.
 
     ![MDK](images/3.3.16.gif) 
 
@@ -376,7 +372,7 @@ While a Technician is updating incident information, such as Status, Device ID, 
     | `Message` | `Entity updated` |
     | `Duration` | `2` |
     | `Animated` | Select `true` from the dropdown option |
-    | `Succes Action` | Click on the link icon and bind it to `CloseModalPage_Complete.action` |
+    | `Success Action` | Click on the link icon and bind it to `CloseModalPage_Complete.action` |
 
     ![MDK](images/3.3.20.png) 
 
@@ -468,7 +464,7 @@ To navigate from the Incident Detail page to a new page for modifying incident i
 
 ### Exercise 3.5 - Redeploy the application
 
-1. Click on `Application.app` file in the project explorer pane and click on `Deploy` and then select deploy target as **Mobile Services**.
+1. Click `Deploy` on the editor page and then select deploy target as **Mobile Services**.
 
     ![MDK](images/x_3.5.1.png)
     ![MDK](images/3.5.2.png)
@@ -478,11 +474,11 @@ To navigate from the Incident Detail page to a new page for modifying incident i
 
 ### Exercise 3.6 - Update the MDK app with new metadata
 
-| Steps      | Android | iOS     |
-| :---        |    :----:   |          ---: |
+| Steps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Android&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | iOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |
+| --- | --- | --- |
 | 1. Tap the **Check for Updates** option in the `User menu` on the Incident page.      | ![MDK](images/3.6.1.png)       | ![MDK](images/3.6.2.png)   |
 | 2. You will see a `New Version Available!` pop-up. Tap **Now**.     | ![MDK](images/3.6.3.png)       | ![MDK](images/3.6.4.png)   |
-| 3. Navigate to an Incident detail page. <br/> If an incident's status is already `Closed`, you will not see the Edit option on its details. n. Instead, you will have the ability to open the working device's image. <br/>  If an incident's status is `New` or `In Process`, you will the Edit option. | ![MDK](images/3.6.5.gif)       | ![MDK](images/3.6.6.gif)   |
+| 3. Navigate to an Incident detail page. <br/> If an incident's status is already `Closed`, you will not see the Edit option on its details. Instead, you will have the ability to open the working device's image. <br/>  If an incident's status is `New` or `In Process`, you will the Edit option. | ![MDK](images/3.6.5.gif)       | ![MDK](images/3.6.6.gif)   |
 | 4. Update an Incident. <br/> you can update the status from `new` to `In Process` or `Closed` or from `In Process` to `Closed`. <br/> When updating it to `In Process`, you should be able to enter the ID of the defective device, either by manually typing it or scanning the device's barcode, but you won't have options for uploading a device image or capturing the customer's signature. <br/> When updating it to `Closed`, you should be able to enter the ID of the defective device, either by manually typing it or scanning the device's barcode, and you should also see the options for uploading a device image and capturing customer's signature. <br/> To scan the device's barcode, you can use the below image. ![MDK](images/3.6.9.png) | ![MDK](images/3.6.7.gif)       | ![MDK](images/3.6.8.gif)   |
 | 5. Since this is an Offline application, the changes are saved to the local store, which needs to be sent or uploaded to the backend explicitly. <br/> Navigate to the Incident list page, pull down on the incident list to upload changes to the backend, OR click on the user menu icon and select **Sync Changes**. You will see a successful message.    | ![MDK](images/3.6.10.gif)       | ![MDK](images/3.6.11.gif)   |
 

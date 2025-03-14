@@ -1,5 +1,5 @@
 {
     "SourceType": "Mobile",
     "DestinationName": "IncidentManagement",
-    "PathSuffix": ""
+    "OfflineEnabled": true
 }
