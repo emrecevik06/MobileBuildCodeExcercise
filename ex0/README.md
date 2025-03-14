@@ -1,30 +1,30 @@
 # Prerequisites
 
-Before proceeding with the session exercises, please ensure that you complete the following prerequisites to ensure a seamless experience.
+Before proceeding with the session exercises, please ensure you complete the following prerequisites for a seamless experience.
 
-### Create a Trial Account
+### Create a Trial Account in US10 Region
 
-To begin using SAP Mobile Services, you'll first need to create a free trial account on SAP's platform. This will allow you to explore various services and tools offered by SAP.
+To begin using SAP Mobile Services, you'll first need to create a free trial account on SAP's platform. This will allow you to explore the various services and tools offered by SAP.
 
 [Learn how to create a Trial Account](https://developers.sap.com/tutorials/hcp-create-trial-account.html "https://developers.sap.com/tutorials/hcp-create-trial-account.html")
 
 ### Run the Booster
 
-After setting up your trial account, the next step is to run the booster. Boosters help automate the setup of development environments, allowing you to quickly configure services and tools necessary for your project.
+After setting up your trial account, the next step is to run the booster. Boosters help automate the setup of development environments, allowing you to quickly configure the services and tools necessary for your project.
 
 [Instructions to Run the Booster](https://developers.sap.com/tutorials/build-code-setup.html "https://developers.sap.com/tutorials/build-code-setup.html")
 
 ### Access Mobile Services
 
-To build and deploy your mobile applications, you'll need access to SAP Mobile Services. This step involves setting up your environment to integrate with SAP's mobile technologies.
+To build and deploy your mobile applications, you need access to SAP Mobile Services. This step involves setting up your environment to integrate with SAP's mobile technologies.
 
 [Follow this guide to Access Mobile Services](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html "https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html")
 
 ### Set Up New MDK App Configuration in the Mobile Services Admin UI
 
-Make sure that you have completed required prerequisites mentioned in this tutorial.
+Ensure you have completed all required prerequisites as mentioned in this tutorial.
 
-1. Navigate to the [SAP Mobile Services Admin UI](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html).
+1. Navigate to the SAP Mobile Services Admin UI.
 
 2. On the home screen, click **Create New App**
    
@@ -49,17 +49,19 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
 5. In the **Role Settings** step, continue with the default settings and choose **Next**.
 
-    ![MDK](images/x_0.1.5.png)    
+    ![MDK](images/x_0.1.5.png) 
+
 6. In the **Assign Features** step, continue with the default settings and choose **Next**.
 
-    ![MDK](images/x_0.1.6.png)    
-7. In the **Review** step, you can verify the details of the application definition that you are creating. Make sure all the details are correct. Choose Edit to make any necessary modifications to the section. Choose **Finish** to create the mobile application configuration. This process may take 2-3 minutes.
+    ![MDK](images/x_0.1.6.png) 
+
+7. In the **Review** step, verify the details of the application definition you are creating. Ensure all details are correct. If necessary, click Edit to make any necessary modifications. Choose **Finish** to create the mobile application configuration. This process may take 2-3 minutes.
 
     ![MDK](images/x_0.1.7.png)
 
-    >If you see a _Application is without Role Settings_ warning message, choose **OK**. You may assign roles after the app has been configured, if needed.
+    >If you see a _Application is without Role Settings_ warning message, choose **OK**. You may assign roles after the app has been configured if needed.
 
-    Once you have created your application, you see a list of default features have been automatically assigned to the app.
+    Once your application is created, you will see a list of default features automatically assigned to the app.
 
     ![MDK](images/x_0.1.9.png)
 
@@ -69,10 +71,12 @@ In the next steps we will configure our backend destination.
 1. Go to `Connectivity`
 
    ![MDK](images/x_0.2.1.png)
-2. Press on the **+** button
+
+2. Click the **+** button
 
    ![MDK](images/x_0.2.2.png)
-3. In the **Basic Info** step, provide the required information and choose **Next**.
+
+3. In the **Basic Info** step, provide the required information and click **Next**.
 
     | Field | Value |
     |----|----|
@@ -81,24 +85,28 @@ In the next steps we will configure our backend destination.
     | `URL`| https://pm-mobile-teched-2023-demos-mobilet23-dev-mobileinciden4492b2c1.cfapps.ap11.hana.ondemand.com/service/IncidentManagementMobile/ |
 
     ![MDK](images/x_0.2.3.png)
+    
 4. In the **Custom Headers** step, continue with the default settings and choose **Next**.
 
    ![MDK](images/x_0.2.4.png)
+
 5. In the **Annotations** step, continue with the default settings and choose **Next**.
 
    ![MDK](images/x_0.2.5.png)
+
 6. In the **Destination Configuration** step, continue with the default settings and choose **Next**.
 
    ![MDK](images/x_0.2.6.png)
+
 7. In the **Certificate Configuration** step, continue with the default settings and choose **Finish**.
 
    ![MDK](images/x_0.2.7.png)
 
 
 ### Download SAP Mobile Services Client
-Before beginning the session exercises, please ensure that you have installed the **SAP Mobile Services Client** app from the public store. You can expedite the installation process by using the provided QR codes.
+Before beginning the session exercises, ensure that you have installed the **SAP Mobile Services Client** app from the public store. You can expedite the installation process using the provided QR codes.
 
-|            Apps            |        Android         |          iOS           |
+|            App            |        Android         |          iOS           |
 | :------------------------: | :--------------------: | :--------------------: |
 | SAP Mobile Services Client | ![MDK](images/0.1.png) | ![MDK](images/0.2.png) |
 
