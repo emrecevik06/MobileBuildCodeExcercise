@@ -136,7 +136,7 @@ A Profile header UI control furnishes additional information and enhances access
 
 1. Scroll on the `Incident_Detail.page` and click on `Deploy`.
 
-    ![MDK](2.4.1.png)
+    ![MDK](images/2.4.1.png)
 
 2. Next, select the deploy target as **Mobile Services**.
 
@@ -150,11 +150,11 @@ A Profile header UI control furnishes additional information and enhances access
 
 ### Exercise 2.5 - Update the MDK App with new metadata
 
-| Steps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Android&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | iOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |
-| --- | --- | --- |
-| 1. Tap the **Check for Updates** option in the `User menu` on the Incident page.      | ![MDK](images/2.5.1.png)       | ![MDK](images/2.5.2.png)   |
-| 2. You will see a `New Version Available!` pop-up.  Tap **Now**.     | ![MDK](images/2.5.3.png)       | ![MDK](images/2.5.4.png)   |
-| 3. On the Incident list page, you now see the customer's name and a filter bar for applying quick filters. <br/> On the Detail page, a profile header will display the customer's details and communication items. This will allow you to email, make a phone call, or send a message to the customer.   | ![MDK](images/2.5.5.gif)       | ![MDK](images/2.5.6.gif)   |
+| Steps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                                                                                                                                                                                      | Android&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | iOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Tap the **Check for Updates** option in the `User menu` on the Incident page.                                                                                                                                                                                                                       | ![MDK](images/2.5.1.png)                                                                                                        | ![MDK](images/2.5.2.png)                                                                                                                                                                                                                |
+| 2. You will see a `New Version Available!` pop-up.  Tap **Now**.                                                                                                                                                                                                                                       | ![MDK](images/2.5.3.png)                                                                                                        | ![MDK](images/2.5.4.png)                                                                                                                                                                                                                |
+| 3. On the Incident list page, you now see the customer's name and a filter bar for applying quick filters. <br/> On the Detail page, a profile header will display the customer's details and communication items. This will allow you to email, make a phone call, or send a message to the customer. | ![MDK](images/2.5.5.gif)                                                                                                        | ![MDK](images/2.5.6.gif)                                                                                                                                                                                                                |
 
 ## Summary
 

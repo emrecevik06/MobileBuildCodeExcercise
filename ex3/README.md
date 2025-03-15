@@ -45,7 +45,7 @@ Both online and offline applications can be modified by users. Online applicatio
 
 5. Press on the empty area and set the **Caption** in the **Properties** pane to **Update Incident Detail**.
 
-    ![MDK](3.1.5.png)
+    ![MDK](images/3.1.5.png)
 
 6. Next, you'll add fields editable by a technician, including status, ID of the defective device name, device image, and customer signature. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell** onto the Page area.
 
@@ -466,7 +466,7 @@ To navigate from the Incident Detail page to a new page for modifying incident i
 
 1. Click `Deploy` on the editor page and then select deploy target as **Mobile Services**.
 
-    ![MDK](3.5.1.png)
+    ![MDK](images/3.5.1.png)
     ![MDK](images/3.5.2.png)
 
     >Alternatively, you can select `MDK: Redeploy` from the command palette. To access the command palette, go to the View menu and choose Command Palette, or press Command+Shift+P on a Mac or Ctrl+Shift+P on a Windows machine. This command will perform the last deployment.

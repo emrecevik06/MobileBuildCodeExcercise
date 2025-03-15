@@ -28,11 +28,11 @@ Ensure you have completed all required prerequisites as mentioned in this tutori
 
 2. On the home screen, click **Create New App**
    
-    ![MDK](0.1.1.png)
+    ![MDK](images/0.1.1.png)
 
 3. In the **Type of Application** step, select the **Mobile Development Kit (MDK)** and choose **Next**.
 
-    ![MDK](0.1.2.png)
+    ![MDK](images/0.1.2.png)
 
 4. In the **Basic Info** step, provide the required information and choose **Next**.
 
@@ -41,40 +41,40 @@ Ensure you have completed all required prerequisites as mentioned in this tutori
     | `ID` | IncidentManagement.myapp.demo |
     | `Name` | IncidentManagement |
 
-    ![MDK](0.1.3.png)
+    ![MDK](images/0.1.3.png)
 
 5. In the **Security Settings** step, continue with the default settings and choose **Next**.
 
-    ![MDK](0.1.4.png)
+    ![MDK](images/0.1.4.png)
 
 5. In the **Role Settings** step, continue with the default settings and choose **Next**.
 
-    ![MDK](0.1.5.png) 
+    ![MDK](images/0.1.5.png) 
 
 6. In the **Assign Features** step, continue with the default settings and choose **Next**.
 
-    ![MDK](0.1.6.png) 
+    ![MDK](images/0.1.6.png) 
 
 7. In the **Review** step, verify the details of the application definition you are creating. Ensure all details are correct. If necessary, click Edit to make any necessary modifications. Choose **Finish** to create the mobile application configuration. This process may take 2-3 minutes.
 
-    ![MDK](0.1.7.png)
+    ![MDK](images/0.1.7.png)
 
     >If you see a _Application is without Role Settings_ warning message, choose **OK**. You may assign roles after the app has been configured if needed.
 
     Once your application is created, you will see a list of default features automatically assigned to the app.
 
-    ![MDK](0.1.9.png)
+    ![MDK](images/0.1.9.png)
 
 ### Configure Destination
 
 In the next steps we will configure our backend destination.
 1. Go to `Connectivity`
 
-   ![MDK](0.2.1.png)
+   ![MDK](images/0.2.1.png)
 
 2. Click the **+** button
 
-   ![MDK](0.2.2.png)
+   ![MDK](images/0.2.2.png)
 
 3. In the **Basic Info** step, provide the required information and click **Next**.
 
@@ -84,29 +84,29 @@ In the next steps we will configure our backend destination.
     | `Destination Type` | Internet Destination |
     | `URL`| https://pm-mobile-teched-2023-demos-mobilet23-dev-mobileinciden4492b2c1.cfapps.ap11.hana.ondemand.com/service/IncidentManagementMobile/ |
 
-    ![MDK](0.2.3.png)
+    ![MDK](images/0.2.3.png)
     
 4. In the **Custom Headers** step, continue with the default settings and choose **Next**.
 
-   ![MDK](0.2.4.png)
+   ![MDK](images/0.2.4.png)
 
 5. In the **Annotations** step, continue with the default settings and choose **Next**.
 
-   ![MDK](0.2.5.png)
+   ![MDK](images/0.2.5.png)
 
 6. In the **Destination Configuration** step, continue with the default settings and choose **Next**.
 
-   ![MDK](0.2.6.png)
+   ![MDK](images/0.2.6.png)
 
 7. In the **Certificate Configuration** step, continue with the default settings and choose **Finish**.
 
-   ![MDK](0.2.7.png)
+   ![MDK](images/0.2.7.png)
 
 
 ### Download SAP Mobile Services Client
 Before beginning the session exercises, ensure that you have installed the **SAP Mobile Services Client** app from the public store. You can expedite the installation process using the provided QR codes.
 
-|            App            |        Android         |          iOS           |
+|            App             |        Android         |          iOS           |
 | :------------------------: | :--------------------: | :--------------------: |
 | SAP Mobile Services Client | ![MDK](images/0.1.png) | ![MDK](images/0.2.png) |
 
