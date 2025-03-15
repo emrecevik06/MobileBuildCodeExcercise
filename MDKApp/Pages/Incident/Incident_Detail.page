@@ -1,5 +1,4 @@
 {
-	"Caption": "Incident Detail",
 	"DesignTimeTarget": {
 		"Service": "/MDKApp/Services/IncidentManagement.service",
 		"EntitySet": "Incident",
@@ -7,87 +6,101 @@
 	},
 	"ActionBar": {
 		"Items": [
-
 			{
 				"OnPress": "/MDKApp/Actions/Incident/Incident_OpenDocument.action",
 				"Position": "Right",
 				"Caption": "View Image",
-				"Visible": "/MDKApp/Rules/Incident/ShowDeviceImageActionbarItem.js"
-			}
-
-		]
-	},
-	"Controls": [{
-		"Sections": [{
-				"ObjectHeader": {
-					"Tags": [],
-					"DetailImage": "/MDKApp/Services/IncidentManagement.service/{@odata.readLink}/DeviceImage",
-					"HeadlineText": "{Title}",
-					"Subhead": "{ID}",
-					"BodyText": "",
-					"Footnote": "{Status}",
-					"Description": "{Description}",
-					"StatusText": "{Urgency}",
-					"StatusImage": "",
-					"SubstatusImage": "",
-					"SubstatusText": "{DeviceID}",
-					"DetailImageIsCircular": true
-				},
-				"_Type": "Section.Type.ObjectHeader"
-			},
-			{
-				"KeyAndValues": [{
-						"KeyName": "Customer Addresss",
-						"Value": "/MDKApp/Rules/Customer/Customer_FormatAddress.js",
-						"LinkColor": "#6189C7",
-						"OnPress": "/MDKApp/Rules/Customer/Customer_OpenMaps.js"
-					},
-					{
-						"KeyName": "Incident ID",
-						"Value": "{ID}"
-					},
-					{
-						"KeyName": "Title",
-						"Value": "{Title}"
-					},
-					{
-						"KeyName": "Description",
-						"Value": "{Description}"
-					},
-					{
-						"KeyName": "Status",
-						"Value": "{Status}"
-					},
-					{
-						"KeyName": "Urgency",
-						"Value": "{Urgency}"
-					},
-					{
-						"KeyName": "Defective Device ID",
-						"Value": "{DeviceID}"
-					},
-					{
-						"KeyName": "customer_ID",
-						"Value": "{customer_ID}"
-					},
-					{
-						"KeyName": "serviceWorker_ID",
-						"Value": "{serviceWorker_ID}"
-					}
-				],
-				"Layout": {
-					"NumberOfColumns": 2
-				},
-				"MaxItemCount": 1,
-				"_Name": "SectionKeyValue0",
-				"_Type": "Section.Type.KeyValue"
+				"Visible": "/MDKApp/Rules/Incident/ShowDeviceImageActionbarItem.js",
+				"_Type": "Control.Type.ActionBarItem"
 			}
 		],
-		"DataSubscriptions": [],
-		"_Type": "Control.Type.SectionedTable",
-		"_Name": "SectionedTable"
-	}],
+		"Caption": "Incident Detail",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "/MDKApp/Services/IncidentManagement.service/{@odata.readLink}/DeviceImage",
+						"HeadlineText": "{Title}",
+						"Subhead": "{ID}",
+						"BodyText": "",
+						"Footnote": "{Status}",
+						"Description": "{Description}",
+						"StatusText": "{Urgency}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{DeviceID}",
+						"DetailImageIsCircular": true
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Customer Addresss",
+							"Value": "/MDKApp/Rules/Customer/Customer_FormatAddress.js",
+							"LinkColor": "#6189C7",
+							"OnPress": "/MDKApp/Rules/Customer/Customer_OpenMaps.js",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Incident ID",
+							"Value": "{ID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Title",
+							"Value": "{Title}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Description",
+							"Value": "{Description}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Status",
+							"Value": "{Status}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Urgency",
+							"Value": "{Urgency}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Defective Device ID",
+							"Value": "{DeviceID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "customer_ID",
+							"Value": "{customer_ID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "serviceWorker_ID",
+							"Value": "{serviceWorker_ID}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
 	"_Type": "Page",
-	"_Name": "Incident_Detail",
-	"PrefersLargeCaption": true
+	"_Name": "Incident_Detail"
 }
