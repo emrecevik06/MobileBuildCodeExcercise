@@ -52,9 +52,22 @@ You will now switch your workspace to the `projects` folder.
 
     The SAP Business Application Studio page will reload, and the projects folder will now open as the workspace. 
 
-    ![MDK](images/1.2.3.png) 
+    ![MDK](images/1.2.3.png)
 
-### Exercise 1.3 - Deploy the Project
+
+### Exercise 1.3 - Set your service worker ID
+
+In the following steps we will set the service worker id.
+
+1. Navigate to `Pages` | `Incident` | `Incident_List.page`. Select the Object Table control to find the  `QueryOptions` property binding. Click on the three-dot icons to open the Object Browser for the `QueryOptions` property.
+
+	![MDK](1.2.4.png)
+	
+2. Replace the placeholder text `workerID` with the service worker ID that has been provided to you and click on **OK**.
+   
+	![MDK](1.2.5.png)
+
+### Exercise 1.4 - Deploy the Project
 
 So far, you have learned how to quickly get started with developing an MDK project in the SAP Business Application Studio editor. Now, you will deploy the project to Mobile Services to use it in the Mobile client.
 
@@ -108,19 +121,19 @@ So far, you have learned how to quickly get started with developing an MDK proje
 
     ![MDK](images/1.3.12.png)
 
-### Exercise 1.4 - Display the QR code for onboarding the Mobile app
+### Exercise 1.5 - Display the QR code for onboarding the Mobile app
 
 You will now run the initial application on the Mobile client installed on your device by scanning the on-boarding QR code. 
 
 Click the `Application.app` to open it in MDK Application Editor and then click the **Application QR Code** icon.
 
-    ![MDK](images/1.4.1.png)
+![MDK](images/1.4.1.png)
     
 The On-boarding QR code is now displayed. Leave the Onboarding dialog box open as you proceed to the next step.
 
-    ![MDK](images/1.4.2.png)
+![MDK](images/1.4.2.png)
 
-### Exercise 1.5 - Run the app
+### Exercise 1.6 - Run the app
 
 | Steps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Android&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | iOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |
 | --- | --- | --- |

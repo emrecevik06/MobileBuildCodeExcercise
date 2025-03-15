@@ -136,7 +136,7 @@ A Profile header UI control furnishes additional information and enhances access
 
 1. Scroll on the `Incident_Detail.page` and click on `Deploy`.
 
-    ![MDK](images/x_2.4.1.png)
+    ![MDK](2.4.1.png)
 
 2. Next, select the deploy target as **Mobile Services**.
 
