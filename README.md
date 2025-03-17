@@ -1,7 +1,5 @@
 # 282 - Develop Mobile Apps with SAP Build Code, Access them via SAP Mobile Start
 
-<p align="center"><img src="./assets/images/img-1.jpg" width="100%" /></p>
-
 ## Description
 Accelerate development by using SAP Build Code to consume a SAP Cloud Application Programming (CAP) Model service for mobile development. Build a native, cross-platform mobile application using mobile development kit and bring all of your work together on the SAP Mobile Start app - the launchpad for mobile apps from SAP.
 
@@ -34,12 +32,12 @@ The back-end for this Hands-On session (AD162) has been created using SAP Cloud 
 This session will focus on building a mobile application using a SAP Cloud Application Programming back-end. To learn more about how to build a back-end using SAP Cloud Application Programming Model, please check out the session AD161.
 
 ## Exercises
-| Exercise Number | Title | Estimated Time (mins) |
-| ---- | ---- | --- |
-| [Exercise 0](ex0/README.md) | Complete pre-requisites| 10 |
-| [Exercise 1](ex1/README.md) | Run the Starting Application on Your Device | 10 |
-| [Exercise 2](ex2/README.md) | Enhance the generated Incidents List and Detail page | 20 |
-| [Exercise 3](ex3/README.md) | Modify an Incident Record | 35 |
+| Exercise Number             | Title                                                | Estimated Time (mins) |
+| --------------------------- | ---------------------------------------------------- | --------------------- |
+| [Exercise 0](ex0/README.md) | Complete pre-requisites                              | 15                    |
+| [Exercise 1](ex1/README.md) | Run the Starting Application on Your Device          | 10                    |
+| [Exercise 2](ex2/README.md) | Enhance the generated Incidents List and Detail page | 20                    |
+| [Exercise 3](ex3/README.md) | Modify an Incident Record                            | 35                    |
 
 
 ## How to obtain support

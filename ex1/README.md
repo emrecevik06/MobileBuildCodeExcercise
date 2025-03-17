@@ -5,9 +5,12 @@ In this exercise, you will run a starting SAP Mobile Development Kit (MDK) appli
 
 - [Exercise 1.1 - Launch the SAP Business Application Studio for MDK Development](#exercise-11---launch-the-sap-business-application-studio-for-mdk-development)
 - [Exercise 1.2 - Change the workspace to the Project Explorer](#exercise-12---change-the-workspace-to-the-project-explorer)
-- [Exercise 1.3 - Deploy the Project](#exercise-13---deploy-the-project)
-- [Exercise 1.4 - Display the QR code for onboarding the Mobile app](#exercise-14---display-the-qr-code-for-onboarding-the-mobile-app)
-- [Exercise 1.5 - Run the app](#exercise-15---run-the-app)
+- [Exercise 1.3 - Set your service worker ID](#exercise-13---set-your-service-worker-id)
+- [Exercise 1.4 - Deploy the Project](#exercise-14---deploy-the-project)
+- [Exercise 1.5 - Display the QR code for onboarding the Mobile app](#exercise-15---display-the-qr-code-for-onboarding-the-mobile-app)
+- [Exercise 1.6 - Run the app](#exercise-16---run-the-app)
+- [Exercise 1.6 - Summary](#summary)
+
 
 ### Exercise 1.1 - Launch the SAP Business Application Studio for MDK Development
 
@@ -61,11 +64,11 @@ In the following steps we will set the service worker id.
 
 1. Navigate to `Pages` | `Incident` | `Incident_List.page`. Select the Object Table control to find the  `QueryOptions` property binding. Click on the three-dot icons to open the Object Browser for the `QueryOptions` property.
 
-	![MDK](1.2.4.png)
+	![MDK](images/1.2.4.png)
 	
 2. Replace the placeholder text `workerID` with the service worker ID that has been provided to you and click on **OK**.
    
-	![MDK](1.2.5.png)
+	![MDK](images/1.2.5.png)
 
 ### Exercise 1.4 - Deploy the Project
 
