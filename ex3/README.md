@@ -470,7 +470,8 @@ To navigate from the Incident Detail page to a new page for modifying incident i
     ![MDK](images/3.5.2.png)
 
     >Alternatively, you can select `MDK: Redeploy` from the command palette. To access the command palette, go to the View menu and choose Command Palette, or press Command+Shift+P on a Mac or Ctrl+Shift+P on a Windows machine. This command will perform the last deployment.
-    >![MDK](images/3.5.3.png)
+    
+	![MDK](images/3.5.3.png)
 
 ### Exercise 3.6 - Update the MDK app with new metadata
 

@@ -1,4 +1,4 @@
-# Exercise 2 - Enhance the Gnerated Incidents List and Detail page
+# Exercise 2 - Enhance the Generated Incidents List and Detail page
 
 In this exercise, you'll make a few enhancements to the generated Incidents list. First, you'll display the customer's name. Then, you'll add a Filter feedback bar that will appear above the Incident List to filter incidents based on certain criteria.
 
