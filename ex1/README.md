@@ -96,11 +96,11 @@ So far, you have learned how to quickly get started with developing an MDK proje
 
     ![MDK](images/1.3.5.png)
 
-6. Switch back to the SAP Business Application Studio page. Paste the copied code into the field labeled **Enter your SSO Passcode** and then click **Sign In**.
+6. Switch back to the SAP Business Application Studio page. Paste the copied code into the field labeled **Enter your SSO Passcode** and then click **Sign in**.
 
     ![MDK](images/1.3.6.png)
 
-7. You are now signed in to the Cloud Foundry. Set the Cloud Foundry target by choosing the appropriate Organization and space from the dropdown menu and then click on **Apply**. Once the Cloud Foundry target is set, the `Cloud Foundry Sign in` tab will automatically close.
+7. You are now signed in to the Cloud Foundry. Set the Cloud Foundry target by choosing the appropriate Organization and space from the dropdown menu and then click on **Apply**. Once the Cloud Foundry target is set, the `Cloud Foundry Sign In` tab will automatically close.
 
     ![MDK](images/1.3.7.png)
 
@@ -108,7 +108,7 @@ So far, you have learned how to quickly get started with developing an MDK proje
 
     ![MDK](images/1.3.8.png)
 
-9. Select Mobile Services landscape as **Standard**.
+9. Select Mobile Services landscape as **standard**.
 
     ![MDK](images/1.3.9.png)
 

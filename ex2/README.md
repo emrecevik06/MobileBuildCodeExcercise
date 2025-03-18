@@ -4,12 +4,14 @@ In this exercise, you'll make a few enhancements to the generated Incidents list
 
 Next, you'll enhance the Incident detail page. Here, you'll replace the existing Object Header with a Profile Header. This enhancement will provide additional information and improved access to multiple communication methods with a customer.
 
-- [Exercise 2.1 - Display Customer Name and Add a Filter Feedback Bar on the Incident List page](#exercise-21---display-customer-name-and-add-a-filter-feedback-bar-on-the-incident-list-page)
-- [Exercise 2.2 -  Add a Filter Feedback Bar on the Incident List page](#exercise-22---add-a-filter-feedback-bar-on-the-incident-list-page)
-- [Exercise 2.3 - Replace the Existing Object Header with the Profile Header UI control](#exercise-23---replace-the-existing-object-header-with-the-profile-header-ui-control)
-- [Exercise 2.4 - Redeploy the Application](#exercise-24---redeploy-the-application)
-- [Exercise 2.5 - Update the MDK App with New Metadata](#exercise-25---update-the-mdk-app-with-new-metadata)
-- [Summary](#summary)
+- [Exercise 2 - Enhance the Generated Incidents List and Detail page](#exercise-2---enhance-the-generated-incidents-list-and-detail-page)
+    - [Exercise 2.1 - Display Customer Name and Add a Filter Feedback Bar on the Incident List page](#exercise-21---display-customer-name-and-add-a-filter-feedback-bar-on-the-incident-list-page)
+    - [Exercise 2.2 - Add a Filter Feedback Bar on the Incident List page](#exercise-22---add-a-filter-feedback-bar-on-the-incident-list-page)
+    - [Exercise 2.3 - Replace the Existing Object Header with the Profile Header UI control](#exercise-23---replace-the-existing-object-header-with-the-profile-header-ui-control)
+    - [Exercise 2.4 - Redeploy the Application](#exercise-24---redeploy-the-application)
+    - [Exercise 2.5 - Update the MDK App with new metadata](#exercise-25---update-the-mdk-app-with-new-metadata)
+  - [Summary](#summary)
+  - [Navigation](#navigation)
 
 ### Exercise 2.1 - Display Customer Name and Add a Filter Feedback Bar on the Incident List page
 
