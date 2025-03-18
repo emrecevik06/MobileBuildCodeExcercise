@@ -65,13 +65,13 @@ Both online and offline applications can be modified by users. Online applicatio
     | `Caption` | `Status` |
     | `AllowEmptySelection` | Choose `false` from the dropdown |
     | `AllowMultipleSelection` | Choose `false` from the dropdown |
-    | `IsPickerDismissedOnSelectionption`  | Choose `true` from the dropdown |
+    | `IsPickerDismissedOnSelection`  | Choose `true` from the dropdown |
     | `AllowDefaultValueIfOneItem` | Choose `true` from the dropdown |
 
     ![MDK](images/3.1.8.png)
 
     > `AllowEmptySelection:` This disables or enables the selection of empty value set.<br>
-    > `IsPickerDismissedOnSelectionption:` This enables automatic dismissal of the list view after an entry is selected.<br>
+    > `IsPickerDismissedOnSelection:` This enables automatic dismissal of the list view after an entry is selected.<br>
     > `AllowDefaultValueIfOneItem:` This enables automatic selection of the default value for the List Picker if only one item is available. It's applicable when a technician updates the status of an incident from `In Process` to `Closed`.
 
 9. When a technician is updating the status of an incident, they should be presented with specific options depending on the current status of the incident.
