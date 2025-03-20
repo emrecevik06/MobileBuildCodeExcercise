@@ -15,7 +15,7 @@ ACME is a popular electronics company. ACME hires call center support representa
 - A **call center support representative** logs the incident on behalf of the customer using the **Incident Creation UI5 app**.    
 - The representative **assigns the ticket** to a service worker for resolution.  
 
-## Incident Resolution (To Do in This Session) (282)    
+### Incident Resolution (To Do in This Session) (282)    
 - Anna, a **technician**, uses the **ACME Technician Incident Management app**.    
 - Anna views the **tasks assigned** to her.    
 - Anna selects a task to **view the details**.    
