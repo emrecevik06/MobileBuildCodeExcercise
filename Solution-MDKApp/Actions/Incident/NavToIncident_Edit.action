@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavToIncident_Edit"
+	},
+	"PageToOpen": "/MDKApp/Pages/Incident/Incident_Edit.page",
+	"ModalPage": true
+}

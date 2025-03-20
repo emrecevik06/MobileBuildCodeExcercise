@@ -1,0 +1,119 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FCStatus",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Status",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Please select one single item",
+							"OnValueChange": "/MDKApp/Rules/Incident/StatusChangeProtocol.js",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": true,
+							"IsEditable": true,
+							"PickerItems": "/MDKApp/Rules/Incident/StatusPicker.js"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCDeviceID",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Device ID",
+							"PlaceHolder": "Type in the device's ID or scan its barcode",
+							"AlternateInput": "Barcode",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Attachment",
+							"_Name": "FCDeviceImage",
+							"IsVisible": true,
+							"Separator": true,
+							"AttachmentActionType": [
+								"AddPhoto",
+								"TakePhoto"
+							],
+							"AttachmentTitle": "Device Image",
+							"AttachmentAddTitle": "Browse"
+						},
+						{
+							"_Type": "Control.Type.FormCell.InlineSignatureCapture",
+							"_Name": "FCCustomerSignature",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Customer Signature",
+							"ShowTimestampInImage": true,
+							"ShowXMark": true,
+							"ShowUnderline": true,
+							"WatermarkText": "Signed by {customer/FirstName} {customer/LastName}",
+							"WatermarkTextMaxLines": 5,
+							"TimestampFormatter": "YYYY-MM-dd 'at' HH:mm:ss"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Incident_Edit",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/MDKApp/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/MDKApp/Actions/Incident/Incident_UpdateEntity.action"
+			}
+		],
+		"_Name": "ActionBar0",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Update Incident Detail"
+	}
+}
