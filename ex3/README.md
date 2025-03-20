@@ -229,10 +229,6 @@ While updating the incident details, you may want to close the current page and 
 
 While a Technician is updating incident information, such as Status, Device ID, Device Image, and Customer Signature, these details will be communicated to the backend through relevant OData calls based on entity type and their respective OData property types.
 
-You can find details of the service definition in your MDK metadata project `/Services/.IncidentManagement.xml`.
-    
-![MDK](images/3.3.1.png)
-
  To update the `Status` and `DeviceID` properties of Incident entity, the OData Update Entity action is used. <br/> However, when dealing with the `DeviceImage` and `ResolutionSignatureImage` properties of the Incident entity, which are of type Edm.Stream, the OData UploadStream action is used. These properties likely store binary data, such as images or files. 
 
 - You will now add an Action Bar item on the `Incident_Edit.page`. This item will trigger an OData Update Entity action to save the Status and Device ID.

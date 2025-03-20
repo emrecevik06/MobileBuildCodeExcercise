@@ -17,17 +17,11 @@ Next, you'll enhance the Incident detail page. Here, you'll replace the existing
 
 As a technician, you may want to see who reported an incident without navigating to the detail page. You may also want to filter the incident list based on status (like new or in process) and urgency (e.g., high).
 
-1. The Incident entity has a `customer` navigation property defined in the OData service definition that allows accessing customer information. 
-
-    To find the service definition, navigate to `Services` | `.IncidentManagement.xml` in your MDK metadata project. You will use this `customer` navigation property to access a customer's details.
-   
-    ![MDK](images/2.1.1.png)
-
-2. The `customer` navigation property has already been defined in the Incidents list page. This information can be found by navigating to `Pages` | `Incident` | `Incident_List.page`. Select the Object Table control to find the  `QueryOptions` property binding.
+1. The `customer` navigation property has already been defined in the Incidents list page. This information can be found by navigating to `Pages` | `Incident` | `Incident_List.page`. Select the Object Table control to find the  `QueryOptions` property binding.
 
     ![MDK](images/2.1.2.png)
 
-3. Scroll down through the Object Table properties, then click on the link icon next to the **Footnote** property to open the Object browser.
+2. Scroll down through the Object Table properties, then click on the link icon next to the **Footnote** property to open the Object browser.
     * Manually type `Reported by` in the Expression field, followed by a space.
     * In the search field, look for the customer's first name, select `FirstName` and click `Insert`. The expression box will generate the binding `Reported by {customer/FirstName}` **Don't close the Object Browser window**.
     * Add a space after the generated value.
