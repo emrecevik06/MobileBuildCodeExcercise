@@ -38,6 +38,7 @@ Ensure you have completed all required prerequisites as mentioned in this tutori
 
     | Field | Value |
     |----|----|
+    | `Service Plan` | lite (if not already set)|
     | `ID` | IncidentManagement.myapp.demo |
     | `Name` | IncidentManagement |
 

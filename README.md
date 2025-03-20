@@ -9,20 +9,25 @@ In order to complete the session exercises below, first complete the [prerequisi
 ## Use Case
 ACME is a popular electronics company. ACME hires call center support representatives to process and manage customer incidents. A call center support representative (Processor) receives a phone call from an existing customer and creates a new incident on behalf of the customer. ACME employs technicians who use mobile apps to view process these incidents.
 
-### Incident Creation (282)
-- Mary reports an issue she is facing with her ACME electronic device.
-- Raj, a support representative, logs the incident using the Incident Management app.
-- Raj records Mary's contact information and issue details.
+### Incident Creation (Completed)    
+- A **CAP backend** has been deployed with a **UI5 app**.    
+- A customer experiences an issue with an **ACME electronic device** and calls the **customer care** hotline.    
+- A **call center support representative** logs the incident on behalf of the customer using the **Incident Creation UI5 app**.    
+- The representative **assigns the ticket** to a service worker for resolution.  
 
-### Incident Resolution (282)
-- Anna, a technician, uses the ACME Technician Incident Management app.
-- Anna views the tasks assigned to her.
-- Anna selects a task to view the details.
-- Anna travels to Mary's location for on-site service.
-- After fixing the issue, Anna uploads a resolution image.
-- Anna requests Mary's digital signature for closing the incident.
-- As a traveling technician, Anna accesses payroll and organizational news via the SAP Mobile Start app.
-- She easily launches the Incident Management app from SAP Mobile Start.
+## Incident Resolution (To Do in This Session) (282)    
+- Anna, a **technician**, uses the **ACME Technician Incident Management app**.    
+- Anna views the **tasks assigned** to her.    
+- Anna selects a task to **view the details**.    
+- Anna **travels on-site** to resolve the issue.    
+- After fixing the issue, Anna **uploads a resolution image**.    
+- Anna **requests the customer’s digital signature** to close the incident.    
+
+### Objective:    
+In this session, students will **build a mobile app** for service workers to manage and resolve incidents.
+
+
+
 
 ## Understand your SAP Cloud Application Programming Backend
 The back-end for this Hands-On session (AD162) has been created using SAP Cloud Application Programming Model, which in turn connects to a HANA DB. Three entities are defined in the `schema.cds` file and then exposed as a service.
