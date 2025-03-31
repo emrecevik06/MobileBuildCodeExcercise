@@ -29,7 +29,7 @@ In this exercise, you will run a starting SAP Mobile Development Kit (MDK) appli
 4. Fill out these information and click **create**: 
    | Field | Value |
     |----|----|
-    | `Clone from Git` | `https://github.com/emrecevik06/MobileBuildCodeExcercise.git` |
+    | `Clone from Git` | `https://github.com/SamiLechner/MobileBuildCodeExcercise.git` |
     | `Project Name` | myapp (used for this exercise) |
     | `Description` | optional |
 
